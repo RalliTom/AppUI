@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Apache Cordova</title>
+</head>
+
+<body>
+    <content>
+        <header slot="top" class="padding amber-200 full-width">
+            <toolbar class="component-list">
+                <button class="icon ion-android-exit" onclick="window.location.href = 'index.html'"></button><h1 class="text-strong text-white">MobileUI Labwork</h1>
+            </toolbar>
+        </header>
+
+        <div class="tab-content padding active" id="tabWelcome">
+            <h2 class="text-strong has-header padding text-amber-400">Welcome</h2>
+            <p class="text-amber">
+                Hello. <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet lobortis urna sit amet ullamcorper. In commodo ante eu arcu cursus dictum. Sed est lorem, vestibulum in consequat eu, sagittis id orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem neque, molestie at luctus in, congue nec purus. Donec scelerisque sit amet quam vel pellentesque. Vivamus quis rutrum enim, a consectetur magna. Nunc at odio tortor. Praesent finibus ultricies est ac ultricies.
+            </p>
+                
+        </div>
+        <div class="tab-content padding" id="tabHome">
+            <h2 class="text-strong has-header padding text-amber-400">Home</h2>
+            <p class="text-amber">Welcome to my humble mobile application. Feel free to roam around and check out other tabs.</p>
+        </div>
+        <div class="tab-content padding" id="tabAbout">
+            <h2 class="text-strong has-header padding text-amber-400">About</h2>
+            <p class="text-amber">This app is made by Tommi Ralli in 2019. Would you believe that?</p>
+            <ion-toolbar class="padding">
+                <ion-button class="blue text-white">
+                    <ion-icon slot="icon-only" name="ion-social-facebook"></ion-icon>
+                </ion-button>
+                <ion-button slot="icon-only" class="green text-white">
+                    <ion-icon name="ion-social-whatsapp-outline"></ion-icon>
+                </ion-button>
+                <ion-button class="red text-white">
+                    <ion-icon slot="icon-only" name="ion-social-instagram-outline"></ion-icon>
+                </ion-button>
+            </ion-toolbar>
+        </div>
+
+
+        <footer class="row padding amber-200 full-width bottom">
+            
+                <button slot="start" class="col-33 icon ion-android-favorite" onclick="openTab('tabWelcome')"></button>
+                <button slot="center" class="col-33 icon ion-android-home" onclick="openTab('tabHome')"></button>
+                <button slot="end" class="col-33 icon ion-information" onclick="openTab('tabAbout')"></button>
+            
+        </footer>
+    </content>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
